@@ -17,7 +17,7 @@
         <h3 class="page-header">TOPICS OF INTEREST</h3>
         <ul> 
           <li v-for="topic in topics">
-            {{ topic.name }} <i class="fa" v-bind:class="'fa-' + {topic.icon}" aria-hidden="true"></i>
+            {{ topic.name }} <i :class="`fa fa-${topic.icon}`" aria-hidden="true"></i>
           </li>
         </ul>
       </div>
